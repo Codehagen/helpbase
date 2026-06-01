@@ -19,9 +19,9 @@ helpbase ships as a scaffolder that creates a standalone Next.js project. No run
 <Steps>
   <Step title="Run the scaffolder">
     ```bash
-    npx create-helpbase my-docs
+    pnpm dlx helpbase init
     ```
-    This creates a new directory with a complete help center project.
+    This drops the helpbase primitives into your current directory.
   </Step>
   <Step title="Pick a content source">
     The scaffolder asks where to seed content from. Three options:
@@ -56,13 +56,13 @@ The scaffolded project is completely standalone. It has no dependency on the hel
 
 ## Adding to an existing project
 
-If you already have a Next.js + shadcn project, use the registry instead:
+If you already have a Next.js + shadcn project, use the command below to add the full helpbase primitive:
 
 ```bash
-npx shadcn add https://helpbase.dev/r/help-center.json
+pnpm dlx helpbase init
 ```
 
-This adds the help center components, content pipeline, and routes to your existing project without replacing your layout or configuration.
+This adds the help center components, content pipeline, and routes to your existing project. You can also install individual pieces (Help center, MCP server, or Sync workflow) from the [/install](/install) page.
 
 ## Deploy
 
