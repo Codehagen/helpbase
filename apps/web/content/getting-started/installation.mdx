@@ -56,13 +56,13 @@ The scaffolded project is completely standalone. It has no dependency on the hel
 
 ## Adding to an existing project
 
-If you already have a Next.js + shadcn project, use the registry instead:
+If you already have a Next.js + shadcn project, you can install the full helpbase primitive in one command:
 
 ```bash
-npx shadcn add https://helpbase.dev/r/help-center.json
+pnpm dlx helpbase init
 ```
 
-This adds the help center components, content pipeline, and routes to your existing project without replacing your layout or configuration.
+This adds the help center routes, starter content, MCP server, and sync workflow to your existing project. You can also add individual pieces by installing primitives like `https://helpbase.dev/r/help-center.json` directly via shadcn.
 
 ## Deploy
 
